@@ -1,0 +1,17 @@
+{
+  "name": "hotel-pms",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.5.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:init": "psql -U pms_user -d hotel_pms -f db/init-db.sql"
+  },
+  "devDependencies": {
+    "turbo": "^2.11.13",
+    "typescript": "^5.9.3"
+  }
+}
